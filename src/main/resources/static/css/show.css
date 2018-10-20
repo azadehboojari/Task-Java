@@ -1,0 +1,28 @@
+h1{
+	text-align: center;
+	padding: 30px;
+	color: rgb(49, 107, 214);
+	text-transform: capitalize;
+}
+h3 {
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+a{
+	
+	position: relative;
+    left: 80%;
+    top: 20px;
+    padding-right: 5px;
+    
+}
+#bt{
+	display: flex; 
+	width: 100%;
+}
+form{
+	padding-right:20px;
+}
+.btn btn-warning{
+	display: inline-block;
+}

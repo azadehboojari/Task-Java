@@ -1,0 +1,22 @@
+.header a{
+	
+	position: relative;
+    left: 80%;
+    top: 20px;
+    
+}
+h1{
+	text-align: center;
+	padding: 30px;
+	color: rgb(49, 107, 214);
+	text-transform: capitalize;
+}
+.table{
+	border: solid black 2px;
+	border-top: solid black 2px;
+	background-color: lightblue;
+	
+}
+table tbody tr td{
+	text-transform: capitalize;
+}

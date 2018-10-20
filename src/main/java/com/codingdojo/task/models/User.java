@@ -19,18 +19,18 @@ public class User {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	@Size(min=2, max=255, message="enter first name")
+	@Size(min=2, max=255, message="Enter first name")
 	private String first;
-	@Size(min=2, max=255, message="enter last name")
+	@Size(min=2, max=255, message="Enter last name")
 	private String last;
 	
 	@Email
 	private String email;
 	
-	@Size(min=2, max=64, message="enter password")
+	@Size(min=2, max=64, message="Enter Password")
 	private String password;
 	@Transient
-	@Size(min=2, max=64, message="confirm password")
+	@Size(min=2, max=64, message="Confirm Password")
 	private String confirm;
 	
 	@OneToMany(mappedBy = "creator")

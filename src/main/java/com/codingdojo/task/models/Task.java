@@ -23,10 +23,10 @@ public class Task {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Size(min=2, max=255, message="enter Task")
+	@Size(min=2, max=255, message="Enter Task")
 	private String taskName;
 	
-	@NotNull(message="Pick Priority")
+	@Size(min=2, message="Pick Priority")
 	private String priority;
 	
 	private Boolean disabled;
@@ -39,7 +39,7 @@ public class Task {
 	@JoinColumn(name="user_id")
 	private User creator;
     
-   @NotNull(message="Please assign someone to this Task")
+    @NotNull(message="Please assign someone to this Task")
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="assignee")
     private User assignee;
